@@ -96,7 +96,7 @@ If your program needs additional files (e.g., configurations, data files), you c
 
 Example:
 ```bash
-pyinstaller --onefile --add-data 'config.json;.' --add-data 'data/*;data' my_program.py
+pyinstaller --onefile --add-data 'config.json;.' --add-data 'data/*;data' --name adventure_game my_program.py
 ```
 
 ### Creating a Distribution Package
