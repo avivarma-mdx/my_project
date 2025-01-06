@@ -13,11 +13,13 @@ from src.company_name.libs.module2 import submodule3
 
 def main():
     # Load configuration
-    config_path = os.path.join(os.path.dirname(__file__), '../../../config/config.json')
-    with open(config_path, 'r') as file:
-        config = json.load(file)
-    
-    print(config['welcome_message'])
+    config_path = os.path.join(os.path.dirname(__file__), '/home/avi.varma/workspace/my_project/config/config.json')
+    if os.path.exists(config_path):
+        with open(config_path, 'r') as file:
+            config = json.load(file)
+        print(config.get('welcome_message', 'hello default'))
+    else:
+        print("hello default")
 
     submodule1.function1()
     submodule2.function2()
