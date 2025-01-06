@@ -1,4 +1,4 @@
-#!/Users/avi.varma/Documents/Develop/my_project/my_project/myenv/bin/python3.12
+#!/home/avi.varma/workspace/my_project/myenv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
