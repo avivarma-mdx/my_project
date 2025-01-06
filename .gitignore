@@ -1,1 +1,4 @@
-./myenv
+myenv
+dist
+build
+*.pyc
